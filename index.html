@@ -1,74 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cătălin Cocosilă - Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cătălin Cocosilă - Portofoliu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Cătălin-Ionuț Cocosilă</h1>
-      <p>Freelance Programming Teacher | Game Developer for Education | C++ & Flutter Enthusiast</p>
-      <div class="contact">
-        <a href="mailto:cocosilacatalin315@gmail.com">📧 Email</a>
-        <a href="https://www.linkedin.com/in/catalin-cocosila-002406180/" target="_blank">🔗 LinkedIn</a>
+<body class="bg-gray-50 text-gray-800">
+  <!-- HEADER -->
+  <header class="bg-blue-900 text-white py-10 shadow">
+    <div class="max-w-4xl mx-auto text-center px-4">
+      <h1 class="text-4xl font-bold">Cătălin-Ionuț Cocosilă</h1>
+      <p class="text-xl mt-2">Freelance Programming Teacher | Game Developer for Education</p>
+      <div class="mt-4 flex justify-center gap-6 text-lg">
+        <a href="mailto:cocosilacatalin315@gmail.com" class="hover:underline">📧 Email</a>
+        <a href="https://www.linkedin.com/in/catalin-cocosila-002406180/" target="_blank" class="hover:underline">🔗 LinkedIn</a>
       </div>
     </div>
   </header>
 
-  <main class="container">
+  <!-- MAIN -->
+  <main class="max-w-4xl mx-auto px-4 py-12 space-y-12">
+    <!-- DESPRE MINE -->
     <section>
-      <h2>About Me</h2>
-      <p>I’m a passionate programming teacher who started out dreaming of building games for the world — and ended up building them for students, who now are my world. I combine nerdy love for data structures with a social drive to teach and inspire. Always ready for new challenges and growth.</p>
+      <h2 class="text-2xl font-semibold mb-4 text-blue-800">Despre mine</h2>
+      <p class="text-lg leading-relaxed">
+        Sunt un profesor pasionat de programare, care a pornit de la visul de a crea jocuri pentru întreaga lume — și a ajuns să le creeze pentru elevii săi, care au devenit lumea lui. Îmbin dragostea pentru algoritmi cu dorința de a inspira. Sunt mereu deschis către provocări noi și oportunități de dezvoltare.
+      </p>
     </section>
 
+    <!-- POZA OLIMPIADA -->
     <section>
-      <h2>Experience</h2>
-      <ul>
-        <li>
-          <strong>Freelance Informatics Teacher @ Matemanie+</strong> (Sep 2022 – Present)<br>
-          Preparing students for national olympiads using C++, algorithms and game development tools.
-        </li>
-        <li>
-          <strong>Programming Instructor @ Logiscool România</strong> (Jan 2022 – Feb 2023)<br>
-          Taught JavaScript, Python and visual programming to children, fostering problem-solving and algorithmic thinking.
-        </li>
-        <li>
-          <strong>Graphics Dept. Coordinator - Local Elections</strong> (Aug 2020 – Oct 2020)<br>
-          Coordinated county-level campaign material design and distribution.
-        </li>
+      <h2 class="text-2xl font-semibold mb-4 text-blue-800">Elevii mei la Olimpiadă</h2>
+      <div class="overflow-hidden rounded-lg shadow-lg">
+        <img src="poza_olimpiada.png" alt="Cătălin și elevii săi la olimpiadă" class="w-full object-cover max-h-[500px]"/>
+      </div>
+    </section>
+
+    <!-- EXPERIENȚĂ -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4 text-blue-800">Experiență</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg">
+        <li><strong>Matemanie+ (Remote)</strong>, 2022–Prezent – Pregătire pentru olimpiade de informatică, dezvoltare de jocuri educaționale.</li>
+        <li><strong>Logiscool România</strong>, 2022–2023 – Predare programare vizuală, JavaScript și Python pentru copii.</li>
+        <li><strong>Campanie politică</strong>, 2020 – Coordonator design materiale tipărite la nivel județean.</li>
       </ul>
     </section>
 
+    <!-- EDUCAȚIE -->
     <section>
-      <h2>Education</h2>
-      <p><strong>University of Craiova</strong> (2020 – 2024, thesis in 2025)<br>
-      Bachelor's Degree in Computer Science</p>
+      <h2 class="text-2xl font-semibold mb-4 text-blue-800">Educație</h2>
+      <p class="text-lg">
+        <strong>Universitatea din Craiova</strong> (2020–2024, licență susținută în 2025)<br>
+        Licență în Informatică
+      </p>
     </section>
 
+    <!-- COMPETENȚE -->
     <section>
-      <h2>Skills</h2>
-      <ul>
+      <h2 class="text-2xl font-semibold mb-4 text-blue-800">Competențe tehnice</h2>
+      <ul class="list-disc list-inside text-lg space-y-1">
         <li>C++, Python, JavaScript, Java, SQL, Bash</li>
-        <li>Object-Oriented Programming, Embedded Systems, Flutter</li>
-        <li>Agile & Scrum, Visual Programming, Algorithm Design</li>
+        <li>OOP, sisteme embedded, Flutter, algoritmică</li>
+        <li>Scrum & Agile, gândire logică, predare vizuală</li>
       </ul>
     </section>
 
+    <!-- PROIECTE -->
     <section>
-      <h2>Certifications & Projects</h2>
-      <p><strong>C++ Certified Entry-Level Programmer (CPE-20-01)</strong> – 2024</p>
-      <p><strong>2025 Thesis:</strong> A Child-Friendly Programmable Robot for STEM Education<br>
-      Built using Flutter, Arduino UNO R4 WiFi, and Blockly. Full system hosted on GitHub Pages with 3D-printed casing and intuitive child-friendly design.</p>
+      <h2 class="text-2xl font-semibold mb-4 text-blue-800">Proiecte & Certificări</h2>
+      <ul class="list-disc list-inside text-lg space-y-2">
+        <li><strong>2024</strong> – C++ Certified Entry-Level Programmer (CPE-20-01)</li>
+        <li><strong>Licență 2025:</strong> Robot educațional programabil pentru copii – cu Flutter, Arduino UNO R4 WiFi, Bluetooth și interfață Blockly.</li>
+      </ul>
     </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Cătălin Cocosilă. All rights reserved.</p>
-    </div>
+  <!-- FOOTER -->
+  <footer class="bg-gray-200 text-center text-sm py-6 mt-12">
+    &copy; 2025 Cătălin Cocosilă. Toate drepturile rezervate.
   </footer>
 </body>
 </html>
